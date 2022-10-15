@@ -1,10 +1,10 @@
-import { useState } from "react";
-import "./App.css";
+import ASide from "./components/ASide";
+import SplitScreen from "./components/Layouts/SplitScreen";
 
 function App() {
   return (
     <div className="App">
-      <h1>React App</h1>
+      <ASide />
     </div>
   );
 }

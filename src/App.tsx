@@ -1,11 +1,14 @@
 import ASide from "./components/ASide";
 import SplitScreen from "./components/Layouts/SplitScreen";
+import ListOfPersonAndProducts from "./components/ListOfPersonAndProducts";
 
 function App() {
   return (
-    <div className="App">
+    <main className="App">
       <ASide />
-    </div>
+      <hr />
+      <ListOfPersonAndProducts />
+    </main>
   );
 }
 

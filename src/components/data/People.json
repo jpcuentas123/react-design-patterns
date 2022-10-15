@@ -1,0 +1,29 @@
+[
+    {
+        "name": "John",
+        "age": 32,
+        "hairColor": "brown",
+        "hobbies": [
+            "golf",
+            "hiking"
+        ]
+    },
+    {
+        "name": "Jane",
+        "age": 25,
+        "hairColor": "blonde",
+        "hobbies": [
+            "reading",
+            "hiking"
+        ]
+    },
+    {
+        "name": "Sam",
+        "age": 18,
+        "hairColor": "brown",
+        "hobbies": [
+            "golf",
+            "reading"
+        ]
+    }
+]

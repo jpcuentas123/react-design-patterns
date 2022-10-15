@@ -1,5 +1,4 @@
 import ASide from "./components/ASide";
-import SplitScreen from "./components/Layouts/SplitScreen";
 import ListOfPersonAndProducts from "./components/ListOfPersonAndProducts";
 
 function App() {

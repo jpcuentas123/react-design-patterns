@@ -1,5 +1,5 @@
 import React from "react";
-import SplitScreen from "./Layouts/SplitScreen";
+import SplitScreen from "./Layouts/Grids/SplitScreen";
 
 const Left = ({ title }: { title: string }) => {
   return <div>{title}</div>;

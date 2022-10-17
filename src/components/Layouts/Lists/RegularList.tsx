@@ -1,4 +1,6 @@
-import React from "react";
+import React, { ReactElement, ReactNode } from "react";
+import VoidStatelessComponent from "../../constants/types";
+import { Divisor } from "../../Ui/Divisor";
 
 interface ListProps {
   items: any[];
@@ -6,6 +8,12 @@ interface ListProps {
   itemComponent: (item: any) => JSX.Element;
   numbered?: boolean;
 }
+
+const NumberedHeader: VoidStatelessComponent<{
+  display: boolean;
+  position: number;
+}> = ({ display, position }) => (display ? <h4>{position}</h4> : null);
+
 const RegularList = ({
   items,
   resourceName,
@@ -16,12 +24,12 @@ const RegularList = ({
     <>
       {items.map((item, i) => (
         <>
-          {numbered && <h4>{i + 1}</h4>}
+          <NumberedHeader display={numbered} position={i + 1} />
           <ItemComponent
             {...{ [resourceName]: item }}
             key={`resourceName-${i}`}
           />
-          {i < items.length - 1 && <hr />}
+          <Divisor display={i !== items.length - 1} />
         </>
       ))}
     </>

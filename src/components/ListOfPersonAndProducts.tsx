@@ -1,6 +1,6 @@
 import React from "react";
 import RegularList from "./Layouts/Lists/RegularList";
-import PersonList from "./Layouts/People";
+import UserList from "./Layouts/Users";
 import people from "./data/People.json";
 import products from "./data/Products.json";
 import ProductList from "./Layouts/Products";
@@ -11,13 +11,13 @@ const ListOfPersonAndProducts = () => {
       <RegularList
         items={people}
         resourceName="person"
-        itemComponent={PersonList.Small}
+        itemComponent={UserList.Small}
       />
       <h2>Persons Full data</h2>
       <RegularList
         items={people}
         resourceName="person"
-        itemComponent={PersonList.Large}
+        itemComponent={UserList.Large}
       />
       <h2>Product small data</h2>
       <RegularList

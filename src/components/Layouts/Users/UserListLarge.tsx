@@ -11,7 +11,7 @@ interface PersonProps {
   person: Person;
 }
 
-const PersonListLarge = ({ person }: PersonProps) => {
+const UserListLarge = ({ person }: PersonProps) => {
   const { name, age, hairColor, hobbies } = person;
   return (
     <>
@@ -31,4 +31,4 @@ const PersonListLarge = ({ person }: PersonProps) => {
   );
 };
 
-export default PersonListLarge;
+export default UserListLarge;

@@ -1,9 +1,9 @@
-import UserListSmall from "./UserListSmall";
-import UserListLarge from "./UserListLarge";
+import UserInfoSmall from "./UserInfoSmall";
+import UserInfoLarge from "./UserIInfoLarge";
 
 const UserList = {
-  Large: UserListLarge,
-  Small: UserListSmall,
+  Large: UserInfoLarge,
+  Small: UserInfoSmall,
 };
 
 export default UserList;

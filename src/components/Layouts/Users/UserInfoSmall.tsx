@@ -6,11 +6,11 @@ interface Person {
 }
 
 interface PersonListLargeProps {
-  person: Person;
+  user: Person;
 }
 
-const UserListSmall = ({ person }: PersonListLargeProps) => {
-  const { name, age } = person;
+const UserInfoSmall = ({ user }: PersonListLargeProps) => {
+  const { name, age } = user;
   return (
     <>
       <p>Name: {name}</p>
@@ -19,4 +19,4 @@ const UserListSmall = ({ person }: PersonListLargeProps) => {
   );
 };
 
-export default UserListSmall;
+export default UserInfoSmall;

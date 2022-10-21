@@ -1,18 +1,14 @@
-import React from "react";
-
-interface Person {
-  name: string;
-  age: number;
-  hairColor: string;
-  hobbies: string[];
-}
+import User from "../../../types";
 
 interface PersonProps {
-  person: Person;
+  user?: User;
 }
 
-const UserListLarge = ({ person }: PersonProps) => {
-  const { name, age, hairColor, hobbies } = person;
+const UserInfoLarge = ({ user }: PersonProps) => {
+  if (!user) {
+    return null;
+  }
+  const { name, age, hairColor, hobbies } = user;
   return (
     <>
       <p>
@@ -31,4 +27,4 @@ const UserListLarge = ({ person }: PersonProps) => {
   );
 };
 
-export default UserListLarge;
+export default UserInfoLarge;

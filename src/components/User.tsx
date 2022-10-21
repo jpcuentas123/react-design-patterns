@@ -4,7 +4,7 @@ import UserInfoLarge from "./Layouts/Users/UserIInfoLarge";
 
 const UserProfile = () => {
   return (
-    <UsersContainer>
+    <UsersContainer userId={"2"}>
       <UserInfoLarge />
     </UsersContainer>
   );

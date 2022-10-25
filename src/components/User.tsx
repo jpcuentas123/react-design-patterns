@@ -1,12 +1,24 @@
 import React from "react";
-import UsersContainer from "../containersComponents/CurrentUserLoader";
-import UserInfoLarge from "./Layouts/Users/UserIInfoLarge";
+import UsersContainer from "../components/containersComponents/CurrentUserLoader";
+import ResourcesLoader from "../components/containersComponents/ResourcesLoader";
+import UserInfoLarge from "./Layouts/Users/UserInfoLarge";
+import DEV_API_URL from "../constants";
+import { QueryProps } from "../types";
 
 const UserProfile = () => {
+  const query: QueryProps = {
+    url: DEV_API_URL,
+    path: "user",
+    params: [
+      {
+        id: "1",
+      },
+    ],
+  };
   return (
-    <UsersContainer userId={"2"}>
+    <ResourcesLoader resourceName="user" query={query}>
       <UserInfoLarge />
-    </UsersContainer>
+    </ResourcesLoader>
   );
 };
 

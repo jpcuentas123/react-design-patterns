@@ -6,4 +6,10 @@ interface User {
   hobbies: string[];
 }
 
-export default User;
+interface QueryProps {
+  url: string; // api.example.com
+  path: string; // /api/v1/...
+  params: Record<string, string>[] | null; // [{id: 1}]
+}
+
+export type { User, QueryProps };

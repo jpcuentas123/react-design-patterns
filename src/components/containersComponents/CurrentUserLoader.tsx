@@ -1,6 +1,6 @@
 import React, { PropsWithChildren, useEffect, useState } from "react";
 import Axios from "axios";
-import User from "../types";
+import { User } from "../../types";
 
 interface Props {
   userId: string;

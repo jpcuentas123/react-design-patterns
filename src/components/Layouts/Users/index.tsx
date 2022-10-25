@@ -1,5 +1,5 @@
 import UserInfoSmall from "./UserInfoSmall";
-import UserInfoLarge from "./UserIInfoLarge";
+import UserInfoLarge from "./UserInfoLarge";
 
 const UserList = {
   Large: UserInfoLarge,

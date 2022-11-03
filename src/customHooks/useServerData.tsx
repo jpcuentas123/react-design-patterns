@@ -1,4 +1,4 @@
-import React, { useReducer } from "react";
+import React, { useEffect, useReducer } from "react";
 import ELoadStates from "../enums";
 import { QueryProps } from "../types";
 
@@ -21,7 +21,6 @@ const formatUrl = (query: QueryProps) => {
       .join("/");
   }
 
-  console.log(`${url}${path}/${queryParams}`);
   return `${url}${path}/${queryParams}`;
 };
 
@@ -72,11 +71,9 @@ const useServerData = ({ query }: { query: QueryProps }) => {
     }
   };
 
-  if (resources.status === ELoadStates.NOT_LOADED) {
+  useEffect(() => {
     fetchResources();
-  }
-
-  console.log({ data: resources.data });
+  }, [resources.status, query]);
 
   return { resources: resources.data, loadState: resources.status };
 };

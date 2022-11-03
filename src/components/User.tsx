@@ -1,5 +1,4 @@
 import React from "react";
-import UsersContainer from "../components/containersComponents/CurrentUserLoader";
 import ResourcesLoader from "../components/containersComponents/ResourcesLoader";
 import UserInfoLarge from "./Layouts/Users/UserInfoLarge";
 import DEV_API_URL from "../constants";

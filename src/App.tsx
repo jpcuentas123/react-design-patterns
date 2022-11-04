@@ -1,14 +1,12 @@
-import ASide from "./components/ASide";
-import Modal from "./components/Layouts/Modal";
-import ListOfPersonAndProducts from "./components/ListOfPersonAndProducts";
-import UserProfile from "./components/User";
 import ErrorBoundary from "./ErrorBoundary";
+import NestedObject from "./components/data/NestedObject.json";
+import RecursiveComponent from "./components/FunctionalProgramming/RecursiveComponents/RecursiveComponent";
 
 function App() {
   return (
     <ErrorBoundary>
       <main className="App">
-        <UserProfile />
+        <RecursiveComponent data={NestedObject} />
       </main>
     </ErrorBoundary>
   );
